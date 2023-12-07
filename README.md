@@ -1,18 +1,19 @@
-# SneakerSearch-V.2
+# SneakerSearch
 
-SneakerSearch version mejorada Utilizando el framework nexj.js
+SneakerSearch Improved Version Using the Next.js Framework
 
-Se utilizo una Api local para llamar a todos los calzados disponibles.
- 
-Versión 2.0 de SneakerSearch, pagina totalmente funcional.
+An improved version of SneakerSearch employing the Next.js framework.
 
-con servicios como:
+A local API was used to fetch all available footwear.
 
-Buscador.
-Carrito de compras.
-Favoritos.
-Pedidos realizados y de mas.
+SneakerSearch , a fully functional website.
 
-y un lista de mas de 100 calzados en la base de datos.
+Includes services such as:
 
-Proyecto realizado por Juan Andres Garcia Silva
+Search functionality
+Shopping cart
+Favorites
+Order history, and more
+A list of over 100 footwear items in the database.
+
+Project created by Sulochan Khadka
