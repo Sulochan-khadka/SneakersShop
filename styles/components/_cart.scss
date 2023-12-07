@@ -1,0 +1,158 @@
+.cart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba($color: #000, $alpha: .5);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 385px;
+    height: 100%;
+    margin-left: auto;
+    padding-top: 30px;
+
+    background-color: #fff;
+    box-shadow: -10px 4px 24px rgba($color: #000, $alpha: .1);
+
+    @media (max-width: 576px) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 15px 30px;
+
+    border-bottom: 1px solid #F3F3F3;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 30px;
+
+    overflow-y: scroll;
+  }
+
+  &__list {
+    flex: 1 1 auto;
+    margin-top: 30px;
+  }
+
+  &__footer {
+    flex: 0 0 auto;
+    padding: 20px 30px 0 30px;
+  }
+
+  &__total {
+    margin-bottom: 24px;
+
+    font-size: 16px;
+
+    &-separator {
+      position: relative;
+
+      flex: 1;
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        bottom: -6px;
+
+        width: 100%;
+
+        border-bottom: 1px dotted #6dee42;
+      }
+    }
+
+    &-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      span:nth-of-type(1) {
+        padding-right: 10px;
+      }
+
+      span:nth-of-type(2) {
+        padding-left: 10px;
+
+        font-weight: 600;
+      }
+    }
+
+    &-tax {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span:nth-of-type(1) {
+        padding-right: 10px;
+      }
+
+      span:nth-of-type(2) {
+        padding-left: 10px;
+
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__checkout {
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 285px;
+    margin: auto;
+
+    text-align: center;
+
+    &-img {
+      margin-bottom: 21px;
+    }
+
+    &-title {
+      margin-bottom: 9px;
+
+      font-size: 22px;
+      font-weight: 600;
+
+      &--green {
+        color: #87C20A;
+      }
+    }
+
+    &-text {
+      font-size: 16px;
+
+      opacity: .4;
+    }
+
+    &-btn {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+}

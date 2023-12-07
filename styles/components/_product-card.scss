@@ -1,0 +1,124 @@
+.card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  padding: 10px 28px;
+
+  border: 1px solid #cccccc;
+  border-radius: 40px;
+
+  overflow: hidden;
+
+  transition: all .2s;
+
+  &:hover {
+    border: 1px solid #cecece;
+    box-shadow: 0 14px 30px rgba($color: #33ff00, $alpha: .08);
+  }
+
+  &__favorite {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+
+    display: flex;
+
+    svg {
+      rect, path {
+        transition: all .3s;
+      }
+    }
+
+    &--active {
+      svg {
+        rect {
+          stroke: #FEF0F0;
+          fill: #FEF0F0;
+        }
+
+        path {
+          stroke: #FF8585;
+          fill: #FF8585;
+        }
+      }
+    }
+
+    &:hover {
+      svg {
+        rect {
+          stroke: #FEF0F0;
+          fill: #FEF0F0;
+        }
+
+        path {
+          stroke: #FF8585;
+          fill: #FF8585;
+        }
+      }
+    }
+  }
+
+  &__img {
+    align-self: center;
+    width: 133px;
+    height: 112px;
+    margin-bottom: 14px;
+
+    object-fit: cover;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      color: #3dc000;
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      font-weight: 700;
+    }
+  }
+
+  &__add {
+    display: flex;
+
+    svg {
+      rect, path {
+        stroke: #dededed1;
+        transition: all .3s;
+      }
+    }
+
+    &:hover {
+      svg {
+        rect {
+          stroke: #5dd473;
+          fill: #5dd473;
+        }
+
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

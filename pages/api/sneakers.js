@@ -1,0 +1,642 @@
+const sneakers = [
+  // nike
+  {
+    id: 1,
+    title: 'Nike Blazer Mid Suede',
+    price: 550.0,
+    imageUrl: 'assets/images/sneakers/sneakers-1.jpg',
+  },
+  {
+    id: 2,
+    title: 'Nike Air Max 270',
+    price: 395.0,
+    imageUrl: 'assets/images/sneakers/sneakers-2.jpg',
+  },
+  {
+    id: 3,
+    title: 'Nike Dunk Low Retro',
+    price: 825.0,
+    imageUrl: 'assets/images/sneakers/dunk.jpg',
+  },
+  {
+    id: 4,
+    title: 'Puma X Aka Boku Future Rider',
+    price: 495.0,
+    imageUrl: 'assets/images/sneakers/sneakers-4.jpg',
+  },
+  {
+    id: 5,
+    title: 'Under Armour Curry 8',
+    price: 556.0,
+    imageUrl: 'assets/images/sneakers/sneakers-5.jpg',
+  },
+  {
+    id: 6,
+    title: 'Nike Kyrie 7',
+    price: 625.0,
+    imageUrl: 'assets/images/sneakers/sneakers-6.jpg',
+  },
+  {
+    id: 7,
+    title: 'Jordan Air Jordan 11',
+    price: 755.0,
+    imageUrl: 'assets/images/sneakers/sneakers-7.jpg',
+  },
+  {
+    id: 8,
+    title: 'Nike LeBron XVIII',
+    price: 595.0,
+    imageUrl: 'assets/images/sneakers/sneakers-8.jpg',
+  },
+  {
+    id: 9,
+    title: 'Nike Lebron XVIII Low',
+    price: 596.0,
+    imageUrl: 'assets/images/sneakers/air foamposite.jpg',
+  },
+  {
+    id: 10,
+    title: 'Air Foamposite One',
+    price: 605.0,
+    imageUrl: 'assets/images/sneakers/sneakers-9.jpg',
+  },
+  {
+    id: 11,
+    title: 'Nike Back to the Future',
+    price: 2410.0,
+    imageUrl: 'assets/images/sneakers/airmag.jpg',
+  },
+  {
+    id: 12,
+    title: 'Nike Kyrie Flytrap IV',
+    price: 625.0,
+    imageUrl: 'assets/images/sneakers/sneakers-10.jpg',
+  },
+  {
+    id: 13,
+    title: 'Nike Blazer Mid VNTG',
+    price: 753.0,
+    imageUrl: "assets/images/sneakers/Mid '77 VNTG.jpg",
+  },
+  {
+    id: 14,
+    title: "Nike Blazer Mid '77",
+    price: 894.0,
+    imageUrl: "assets/images/sneakers/Blazer Mid '77.jpg",
+  },
+  {
+    id: 15,
+    title: 'Nike Blazer Mid',
+    price: 453.0,
+    imageUrl: 'assets/images/sneakers/Blazer Mid.jpg',
+  },
+  {
+    id: 16,
+    title: 'Nike Air More Uptempo',
+    price: 998.0,
+    imageUrl: 'assets/images/sneakers/Uptempo.jpg',
+  },
+  {
+    id: 17,
+    title: 'Nike x Sean Wotherspoon',
+    price: 8753.0,
+    imageUrl: 'assets/images/sneakers/Sean Wotherspoon.jpg',
+  },
+  {
+    id: 18,
+    title: 'Nike SB Dunk Low Pro OG QS',
+    price: 894.0,
+    imageUrl: 'assets/images/sneakers/SB Dunk Low.jpg',
+  },
+  {
+    id: 19,
+    title: 'Nike Air Force 1 Low 07 What',
+    price: 753.0,
+    imageUrl: 'assets/images/sneakers/Air Force 1 Low.jpg',
+  },
+  {
+    id: 20,
+    title: 'Nike Travis Scott one Low',
+    price: 898.0,
+    imageUrl: 'assets/images/sneakers/Nike x Travis Scott1.jpg',
+  },
+  {
+    id: 21,
+    title: 'Nike Air Fear Of God 1',
+    price: 755.0,
+    imageUrl: 'assets/images/sneakers/Air Fear Of God 1.jpg',
+  },
+  {
+    id: 22,
+    title: 'Nike Offline 2.0',
+    price: 855.0,
+    imageUrl: 'assets/images/sneakers/sandalias Offline 2.0.jpg',
+  },
+  {
+    id: 23,
+    title: 'Nike Dunk Low SB',
+    price: 7463.0,
+    imageUrl: 'assets/images/sneakers/Dunk Low SB TRD QS.jpg',
+  },
+  {
+    id: 24,
+    title: 'Nike Air Max 90',
+    price: 869.0,
+    imageUrl: 'assets/images/sneakers/Air Max 90.jpg',
+  },
+  // Fin Nike
+
+  // New Balance
+  {
+    id: 25,
+    title: 'New Balance 2002RX',
+    price: 945.0,
+    imageUrl: 'assets/images/sneakers/2002RX GORE.jpg',
+  },
+  {
+    id: 26,
+    title: 'New Balance 550 Shadow',
+    price: 875.0,
+    imageUrl: 'assets/images/sneakers/550 Shadow.jpg',
+  },
+  {
+    id: 27,
+    title: 'New Balance 990 V1',
+    price: 895.0,
+    imageUrl: 'assets/images/sneakers/990 V1 Made in USA.jpg',
+  },
+  {
+    id: 28,
+    title: 'New Balance MS997',
+    price: 755.0,
+    imageUrl: 'assets/images/sneakers/MS997 .jpg',
+  },
+  {
+    id: 29,
+    title: 'New Balance cañas altas 650',
+    price: 865.0,
+    imageUrl: 'assets/images/sneakers/altos 650.jpg',
+  },
+  {
+    id: 30,
+    title: 'New Balance 550 x Aimé Leon Dore',
+    price: 795.0,
+    imageUrl: 'assets/images/sneakers/550 de New Balance.jpg',
+  },
+  {
+    id: 31,
+    title: 'New Balance 2002RDI',
+    price: 965.0,
+    imageUrl: 'assets/images/sneakers/Protection Pack - Grey.jpg',
+  },
+  {
+    id: 32,
+    title: 'New Balance bajos 2002R',
+    price: 889.0,
+    imageUrl: 'assets/images/sneakers/tenis bajos 2002R.jpg',
+  },
+  {
+    id: 33,
+    title: 'New Balance 327 Grey Day',
+    price: 765.0,
+    imageUrl: 'assets/images/sneakers/New Balance 327 Grey Day.jpg',
+  },
+  {
+    id: 34,
+    title: 'New Balance 530 con parche',
+    price: 615.0,
+    imageUrl: 'assets/images/sneakers/530 con parche del logo.jpg',
+  },
+  {
+    id: 35,
+    title: 'New Balance 2002R',
+    price: 664.0,
+    imageUrl: 'assets/images/sneakers/bajos 2002R.jpg',
+  },
+  {
+    id: 36,
+    title: 'New Balance bajos 327',
+    price: 714.0,
+    imageUrl: 'assets/images/sneakers/tenis bajos 327.jpg',
+  },
+  {
+    id: 37,
+    title: 'New Balance x Stone Island',
+    price: 999.0,
+    imageUrl: 'assets/images/sneakers/FuelCell RC Elite V2 de New.jpg',
+  },
+  {
+    id: 38,
+    title: 'New Balance bajos 610V1',
+    price: 445.0,
+    imageUrl: 'assets/images/sneakers/bajos 610V1.jpg',
+  },
+  {
+    id: 39,
+    title: 'New Balance 327 Lunar New Year',
+    price: 486.0,
+    imageUrl: 'assets/images/sneakers/327 Lunar New Year.jpg',
+  },
+  {
+    id: 40,
+    title: 'New Balance 2002R Dark Grape',
+    price: 684.0,
+    imageUrl: 'assets/images/sneakers/2002R Dark Grape.jpg',
+  },
+  {
+    id: 41,
+    title: 'New Balance XC-72',
+    price: 584.0,
+    imageUrl: 'assets/images/sneakers/tenis XC-72.jpg',
+  },
+  {
+    id: 42,
+    title: 'New Balance MADE in USA 990v3',
+    price: 983.0,
+    imageUrl: 'assets/images/sneakers/MADE in USA 990v3.jpg',
+  },
+  {
+    id: 43,
+    title: 'New Balance bajos 2002RD',
+    price: 963.0,
+    imageUrl: 'assets/images/sneakers/tenis bajos 2002RD.jpg',
+  },
+  {
+    id: 44,
+    title: 'New Balance 327 Mushroom',
+    price: 605.0,
+    imageUrl: 'assets/images/sneakers/tenis 327.jpg',
+  },
+  // Fin New Balance
+
+  // ADIDAS
+  {
+    id: 45,
+    title: 'Adidas bajos Superstar',
+    price: 345.0,
+    imageUrl: 'assets/images/sneakers/Superstar.jpg',
+  },
+  {
+    id: 46,
+    title: 'Adidas Pharrell Williams Solarhu',
+    price: 987.0,
+    imageUrl: 'assets/images/sneakers/Pharrell Williams Solarhu HU Glide.jpg',
+  },
+  {
+    id: 47,
+    title: 'Adidas NMD_CS1 Primeknit',
+    price: 862.0,
+    imageUrl: 'assets/images/sneakers/NMD_CS1 Primeknit Adidas.jpg',
+  },
+  {
+    id: 48,
+    title: 'Adidas PW HU Holi NMD',
+    price: 963.0,
+    imageUrl: 'assets/images/sneakers/PW HU Holi NMD MC.jpg',
+  },
+  {
+    id: 49,
+    title: 'Adidas NMD_R1',
+    price: 875.0,
+    imageUrl: 'assets/images/sneakers/NMD_R1.jpg',
+  },
+  {
+    id: 50,
+    title: 'Adidas Consortium Runner 4D',
+    price: 867.0,
+    imageUrl: 'assets/images/sneakers/Consortium Runner 4D.jpg',
+  },
+  {
+    id: 51,
+    title: 'Adidas Ultra Boost LTD',
+    price: 489.0,
+    imageUrl: 'assets/images/sneakers/Ultra Boost LTD.jpg',
+  },
+  {
+    id: 52,
+    title: 'Adidas Human Race NMD',
+    price: 785.0,
+    imageUrl: 'assets/images/sneakers/Pharrell Williams Human Race NMD.jpg',
+  },
+  {
+    id: 53,
+    title: 'Adidas PW Human Race NMD TR',
+    price: 825.0,
+    imageUrl: 'assets/images/sneakers/PW Human Race NMD TR.jpg',
+  },
+  {
+    id: 54,
+    title: 'Adidas Futurecraft 4D',
+    price: 796.0,
+    imageUrl: 'assets/images/sneakers/Futurecraft 4D.jpg',
+  },
+  {
+    id: 55,
+    title: 'Adidas Human Race NMD',
+    price: 896.0,
+    imageUrl: 'assets/images/sneakers/Race NMD sneakers.jpg',
+  },
+  {
+    id: 56,
+    title: 'Adidas ZX 4.00 4D',
+    price: 785.0,
+    imageUrl: 'assets/images/sneakers/ZX 4.00 4D.jpg',
+  },
+  {
+    id: 57,
+    title: 'Adidas EQT Support ADV',
+    price: 745.0,
+    imageUrl: 'assets/images/sneakers/EQT Support ADV.jpg',
+  },
+  {
+    id: 58,
+    title: 'Adidas Ultra Boost',
+    price: 658.0,
+    imageUrl: 'assets/images/sneakers/Ultra Boost.jpg',
+  },
+  {
+    id: 59,
+    title: 'Adidas HU NMD Trail',
+    price: 742.0,
+    imageUrl: 'assets/images/sneakers/Pharrell Williams HU NMD Trail.jpg',
+  },
+  {
+    id: 60,
+    title: 'Adidas NMD_XR1 MMJ',
+    price: 659.0,
+    imageUrl: 'assets/images/sneakers/NMD_XR1 MMJ.jpg',
+  },
+  // FIN ADIDAS
+
+  // PUMA
+  {
+    id: 61,
+    title: 'Puma RS-X Toys',
+    price: 756.0,
+    imageUrl: 'assets/images/sneakers/RS-X Toys.jpg',
+  },
+  {
+    id: 62,
+    title: 'Puma Disc',
+    price: 685.0,
+    imageUrl: 'assets/images/sneakers/Puma Disc.jpg',
+  },
+  {
+    id: 63,
+    title: 'Puma RS-0 Sonic',
+    price: 585.0,
+    imageUrl: 'assets/images/sneakers/RS-0 Sonic.jpg',
+  },
+  {
+    id: 64,
+    title: 'Puma x RF Disc Coa 1',
+    price: 498.0,
+    imageUrl: 'assets/images/sneakers/Puma x RF Disc Coa 1.jpg',
+  },
+  {
+    id: 65,
+    title: 'Puma RS-0 EGGMAN',
+    price: 578.0,
+    imageUrl: 'assets/images/sneakers/RS-0 EGGMAN x SEGA.jpg',
+  },
+  {
+    id: 66,
+    title: 'Puma R698 x BWGH',
+    price: 689.0,
+    imageUrl: 'assets/images/sneakers/R698 x BWGH.jpg',
+  },
+  {
+    id: 67,
+    title: 'Puma Disc Coa 2',
+    price: 753.0,
+    imageUrl: 'assets/images/sneakers/Disc Coa 2.jpg',
+  },
+  {
+    id: 68,
+    title: 'Puma R698 Mid Sakura',
+    price: 852.0,
+    imageUrl: 'assets/images/sneakers/R698 Mid Sakura.jpg',
+  },
+  {
+    id: 69,
+    title: 'Puma R698 Sakura',
+    price: 741.0,
+    imageUrl: 'assets/images/sneakers/R698 Sakura.jpg',
+  },
+  {
+    id: 70,
+    title: 'Puma Blaze Of Glory OG',
+    price: 852.0,
+    imageUrl: 'assets/images/sneakers/Blaze Of Glory OG x Staple.jpg',
+  },
+  {
+    id: 71,
+    title: 'Puma Blaze Of Glory',
+    price: 609.0,
+    imageUrl: 'assets/images/sneakers/Blaze Of Glory de PUMA x Limited Edt.jpg',
+  },
+  {
+    id: 72,
+    title: 'Puma R698 Nubuck x HS',
+    price: 993.0,
+    imageUrl: 'assets/images/sneakers/R698 Nubuck x HS x RF.jpg',
+  },
+  // FIN PUMA
+
+  // UNDER ARMOR
+  {
+    id: 73,
+    title: 'Under Armour UA Curry 7',
+    price: 852.0,
+    imageUrl: 'assets/images/sneakers/UA Curry 7.jpg',
+  },
+  {
+    id: 74,
+    title: 'Under Armour Assert 9',
+    price: 609.0,
+    imageUrl: 'assets/images/sneakers/Assert 9.jpg',
+  },
+  {
+    id: 75,
+    title: 'Under Armour Curry 4',
+    price: 993.0,
+    imageUrl: 'assets/images/sneakers/Curry 4.jpg',
+  },
+  {
+    id: 76,
+    title: 'Under Armour Curry 1 Black',
+    price: 852.0,
+    imageUrl: 'assets/images/sneakers/Curry 1 Black History Month.jpg',
+  },
+  {
+    id: 77,
+    title: 'Under Armour Team Curry 7',
+    price: 609.0,
+    imageUrl: 'assets/images/sneakers/Team Curry 7.jpg',
+  },
+  {
+    id: 78,
+    title: 'Under Armour HOVR Rise 3',
+    price: 993.0,
+    imageUrl: 'assets/images/sneakers/HOVR Rise 3.jpg',
+  },
+  {
+    id: 79,
+    title: 'Under Armour UA Forge 96',
+    price: 852.0,
+    imageUrl: 'assets/images/sneakers/Forge 96 Track.jpg',
+  },
+  {
+    id: 80,
+    title: 'Under Armour bajos Team Curry 7',
+    price: 609.0,
+    imageUrl: 'assets/images/sneakers/bajos Team Curry 7.jpg',
+  },
+  {
+    id: 81,
+    title: 'Under Armour Charged Verssert',
+    price: 993.0,
+    imageUrl: 'assets/images/sneakers/Charged Verssert Black Out.jpg',
+  },
+  // FIN UNDER ARMOR
+
+  // REEBOK
+  {
+    id: 82,
+    title: 'Reebok Instapump Fury Proto 94',
+    price: 745.0,
+    imageUrl: 'assets/images/sneakers/Instapump Fury Proto 94.jpg',
+  },
+  {
+    id: 83,
+    title: 'Reebok Legacy pro',
+    price: 796.0,
+    imageUrl: 'assets/images/sneakers/Legacy.jpg',
+  },
+  {
+    id: 84,
+    title: 'Reebok x UNDFTD',
+    price: 852.0,
+    imageUrl: 'assets/images/sneakers/UNDFTD x Reebok.jpg',
+  },
+  {
+    id: 85,
+    title: 'Reebok Instapump Fury Ted 2',
+    price: 957.0,
+    imageUrl: 'assets/images/sneakers/Fury Ted 2.jpg',
+  },
+  {
+    id: 86,
+    title: 'Reebok Instapump Fury Road',
+    price: 873.0,
+    imageUrl: 'assets/images/sneakers/Instapump Fury Road.jpg',
+  },
+  {
+    id: 87,
+    title: 'Reebok Pump Graphlite',
+    price: 824.0,
+    imageUrl: 'assets/images/sneakers/Pump Graphlite.jpg',
+  },
+  {
+    id: 88,
+    title: 'Reebok Club C 85 TV',
+    price: 654.0,
+    imageUrl: 'assets/images/sneakers/Club C 85 TV.jpg',
+  },
+  {
+    id: 89,
+    title: 'Reebok altos Pump',
+    price: 756.0,
+    imageUrl: 'assets/images/sneakers/altos Pump.jpg',
+  },
+  {
+    id: 90,
+    title: 'Reebok Shaq Attaq',
+    price: 864.0,
+    imageUrl: 'assets/images/sneakers/altos Shaq Attaq.jpg',
+  },
+  {
+    id: 91,
+    title: 'Reebok Tiger Prizm',
+    price: 769.0,
+    imageUrl: 'assets/images/sneakers/Tiger Prizm de Reebok.jpg',
+  },
+  {
+    id: 92,
+    title: 'Reebok Shaqnosis',
+    price: 746.0,
+    imageUrl: 'assets/images/sneakers/Shaqnosis.jpg',
+  },
+  {
+    id: 93,
+    title: 'Reebok bajos LX2200',
+    price: 674.0,
+    imageUrl: 'assets/images/sneakers/bajos LX2200.jpg',
+  },
+  {
+    id: 94,
+    title: 'Reebok Pump Omni Zone II',
+    price: 972.0,
+    imageUrl: 'assets/images/sneakers/Pump Omni Zone II.jpg',
+  },
+  {
+    id: 95,
+    title: 'Reebok Zig Kinetica 2.5',
+    price: 741.0,
+    imageUrl: 'assets/images/sneakers/Zig Kinetica II Edge.jpg',
+  },
+  {
+    id: 96,
+    title: 'Reebok sandalias Beatnik',
+    price: 943.0,
+    imageUrl: 'assets/images/sneakers/sandalias Beatnik.jpg',
+  },
+  {
+    id: 97,
+    title: 'Reebok Zig Kinetica II Edge',
+    price: 576.0,
+    imageUrl: 'assets/images/sneakers/Zig Kinetica 2.5 Edge.jpg',
+  },
+  {
+    id: 98,
+    title: 'Reebok Pump Omni Zone II',
+    price: 841.0,
+    imageUrl: 'assets/images/sneakers/tenis Pump Omni Zone II.jpg',
+  },
+  {
+    id: 99,
+    title: 'Reebok altos Pump Omni Zone II',
+    price: 842.0,
+    imageUrl: 'assets/images/sneakers/altos Pump Omni Zone II.jpg',
+  },
+  {
+    id: 100,
+    title: 'Reebok Instapump Fury x Kenzo',
+    price: 756.0,
+    imageUrl:
+      'assets/images/sneakers/Instapump Fury de Reebok x Kenzo Minami.jpg',
+  },
+  {
+    id: 101,
+    title: 'Reebok Instapump Fury OG 95',
+    price: 766.0,
+    imageUrl: 'assets/images/sneakers/Instapump Fury OG 95.jpg',
+  },
+  {
+    id: 102,
+    title: 'Reebok Question Mid Yellow Toe',
+    price: 853.0,
+    imageUrl: 'assets/images/sneakers/Question Mid Yellow Toe - Kobe.jpg',
+  },
+  {
+    id: 103,
+    title: 'Reebok altos Shaq Victory Pump',
+    price: 935.0,
+    imageUrl: 'assets/images/sneakers/Shaq Victory Pump.jpg',
+  },
+  // FIN REEBOK
+];
+
+export default function handler(req, res) {
+  res.status(200).json(sneakers);
+}

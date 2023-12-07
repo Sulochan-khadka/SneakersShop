@@ -1,0 +1,56 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin: 0 30px 20px 30px;
+  padding: 30px 20px;
+
+  border: 1px solid #d5d5d5;
+  border-radius: 20px;
+
+  transition: all .2s;
+
+  &:hover {
+    border: 1px solid #d5d5d5;
+    box-shadow: 0 14px 30px rgba($color: #000, $alpha: .05);
+  }
+
+  &__img {
+    width: 70px;
+    margin-right: 20px;
+  }
+
+  &__info {
+    margin-right: 10px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 5px;
+
+    line-height: normal;
+  }
+
+  &__price {
+    font-weight: 700;
+  }
+
+  &__remove {
+    svg {
+      rect, path {
+        transition: all .3s;
+      }
+    }
+
+    &:hover {
+      svg {
+        rect {
+          stroke: #F37F7F;
+        }
+
+        path {
+          fill: #F37F7F;
+        }
+      }
+    }
+  }
+}
