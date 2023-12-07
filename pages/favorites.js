@@ -10,11 +10,11 @@ export default function Favorites() {
     return (
       <Layout>
         <section className='empty'>
-          <img
+          {/* <img
             className='empty__emoji'
             src='/assets/images/pleading-emoji.svg'
             alt='Aun no tienes favoritos :('
-          />
+          /> */}
           <h1 className='empty__title'>You don't have favorites yet :(</h1>
           <p className='empty__text'>
             Add your favorite sneakers to your list!

@@ -21,11 +21,11 @@ export default function Profile() {
     return (
       <Layout>
         <section className='empty'>
-          <img
+          {/* <img
             className='empty__emoji'
             src='/assets/images/pensive-emoji.svg'
             alt=''
-          />
+          /> */}
           <h1 className='empty__title'>You are not registered yet</h1>
           <p className='empty__text'>
             Do you want to register?
